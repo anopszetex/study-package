@@ -1,0 +1,25 @@
+{
+  "name": "my-package",
+  "version": "1.0.0",
+  "description": "creating a simple package for study",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anopszetex/my-package.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anopszetex/my-package/issues"
+  },
+  "homepage": "https://github.com/anopszetex/my-package#readme",
+  "dependencies": {
+    "autocannon": "^7.9.0"
+  }
+}
