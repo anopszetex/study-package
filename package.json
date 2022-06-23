@@ -1,5 +1,5 @@
 {
-  "name": "my-package",
+  "name": "@anopszetex/my-package",
   "version": "1.0.0",
   "description": "creating a simple package for study",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/anopszetex/my-package.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "anopszetex",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/anopszetex/my-package/issues"
