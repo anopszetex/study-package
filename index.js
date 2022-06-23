@@ -6,5 +6,3 @@ Array.prototype.mapAsync = function * (cb) {
     counter++
   } 
 }
-
-const list = [1, 2, 3, 4, 5].mapAsync((row) => row * 2)
