@@ -7,7 +7,7 @@ Array.prototype.mapAsync = function * (cb) {
   } 
 }
 
-const curry = (fn) => {
+const fnCurry = (fn) => {
   const expectedArgs = fn.length;
 
   const curried = (...args) => {
