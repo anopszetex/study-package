@@ -6,3 +6,18 @@ Array.prototype.mapAsync = function * (cb) {
     counter++
   } 
 }
+
+const curry = (fn) => {
+  const expectedArgs = fn.length;
+
+  const curried = (...args) => {
+    if(expectedArgs !== args.length) {
+      return curried.bind(null, ...args)
+    }
+
+    return fn(...args) 
+  }
+
+  return curried
+}
+
