@@ -9,10 +9,19 @@ restore dependencies as from package-lock.json
 ## Usage
 
 ```js
-const total =  [1, 2, 3].mapAsync((row) => row * 2);
+import { mapAsync } from '@anopszetex/my-package'
+
+const items = [1, 2];
+
+const total = mapAsync(items, (item) => item * 2);
 
 console.log(total);
-//=> [2,4,6]
+//=> [2, 4, 6]
+
+const total = mapAsync(items)((row) => row * 2);
+
+console.log(total);
+//=> [2, 4, 6]
 ```
 
 ### iterator.mapAsync(fn)
