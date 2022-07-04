@@ -15,15 +15,11 @@ const items = [1, 2];
 
 const total = mapAsync(items, (item) => item * 2);
 
-console.log(total);
+console.log([...total]);
 //=> [2, 4, 6]
 
 const total = mapAsync(items)((row) => row * 2);
 
-console.log(total);
+console.log([...total]);
 //=> [2, 4, 6]
 ```
-
-### iterator.mapAsync(fn)
-
-example
