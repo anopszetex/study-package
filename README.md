@@ -36,15 +36,17 @@ yarn add @anopszetex/my-package
 ```js
 import { mapAsync } from '@anopszetex/my-package'
 
-const items = [1, 2];
+{
+  const items = [1, 2];
+  const total = mapAsync(items, (item) => item * 2);
 
-const total = mapAsync(items, (item) => item * 2);
+  console.log([...total]); //=> [2, 4, 6]
+}
 
-console.log([...total]);
-//=> [2, 4, 6]
+{
+  const items = [1, 2];
+  const total = mapAsync(items)((row) => row * 2);
 
-const total = mapAsync(items)((row) => row * 2);
-
-console.log([...total]);
-//=> [2, 4, 6]
+  console.log([...total]); //=> [2, 4, 6]
+}
 ```
