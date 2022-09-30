@@ -1,6 +1,6 @@
 {
   "name": "@anopszetex/my-package",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "creating a simple package for study",
   "main": "index.js",
   "type": "module",
